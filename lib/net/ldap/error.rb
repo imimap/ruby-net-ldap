@@ -11,12 +11,12 @@ class Net::LDAP
   class SocketError < Error; end
   class ConnectionRefusedError < Error;
     def initialize(*args)
-      warn_deprecation_message
+      # warn_deprecation_message
       super
     end
 
     def message
-      warn_deprecation_message
+      # warn_deprecation_message
       super
     end
 
